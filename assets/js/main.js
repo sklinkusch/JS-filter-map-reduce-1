@@ -20,4 +20,7 @@ cookedFood = food.map(item => {
 VegetarianCookedFood = cookedFood.filter(
   food => food === "fries" || food === "popcorn"
 );
-console.log(VegetarianCookedFood);
+ReducedFood = VegetarianCookedFood.reduce(
+  (accumulator, currentValue) => "shit"
+);
+console.log(ReducedFood);
