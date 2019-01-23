@@ -1,21 +1,19 @@
 const food = ["cow", "potato", "chicken", "corn"];
 cookedFood = food.map(item => {
-  var cook;
   switch (item) {
     case "cow":
-      cook = "hamburger";
+      return "hamburger";
       break;
     case "potato":
-      cook = "fries";
+      return "fries";
       break;
     case "chicken":
-      cook = "poultry_leg";
+      return "poultry_leg";
       break;
     case "corn":
-      cook = "popcorn";
+      return "popcorn";
       break;
   }
-  return cook;
 });
 VegetarianCookedFood = cookedFood.filter(
   food => food === "fries" || food === "popcorn"
