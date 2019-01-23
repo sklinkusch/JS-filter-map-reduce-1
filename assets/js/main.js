@@ -17,3 +17,7 @@ cookedFood = food.map(item => {
   }
   return cook;
 });
+VegetarianCookedFood = cookedFood.filter(
+  food => food === "fries" || food === "popcorn"
+);
+console.log(VegetarianCookedFood);
