@@ -19,9 +19,7 @@ function ArrayMapFilterReduce(array) {
   VegetarianCookedFood = cookedFood.filter(
     food => food === "fries" || food === "popcorn"
   );
-  ReducedFood = VegetarianCookedFood.reduce(
-    (accumulator, currentValue) => "shit"
-  );
+  ReducedFood = cookedFood.reduce((accumulator, currentValue) => "shit");
   return ReducedFood;
 }
 console.log(ArrayMapFilterReduce(food));
